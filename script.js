@@ -4,8 +4,8 @@ function getLocation()
 {
     if(navigator.geolocation)
     {
-        navigator.geolocation.getCurrentPosition(showPosition,showError);
-        // navigator.geolocation.watchPosition(showPosition);
+        // navigator.geolocation.getCurrentPosition(showPosition,showError);
+        navigator.geolocation.watchPosition(showPosition);
     }
     else
     {
